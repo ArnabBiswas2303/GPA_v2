@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GPA Tracker</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+	<link rel="manifest" href="../img/site.webmanifest">
+	<link rel="mask-icon" href="../img/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="/stylesheet/main.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="show" id="container">		
+		<div class="div1">
+			<h4 class="left"></h4>
+			<div class="left">
+				<div id="img"></div>
+			</div>
+		</div>
+		<div class="div2">
+			<a id="creators" href="/dev">@Creators</a>
+			<h4 class="right"></h4>
+			<div class="right">
+				<p id="smit">SMIT</p>
+				<p id="tracker"><span>Perfomance </span><span>Tracker</span></p>
+			<input id="input" type="text" placeholder="Enter Reg. Number" name="regnum">
+			<nav>
+				  <ul class="drop-down closed">
+				    <li><a href="#" class="nav-button">Semester</a></li>
+				    <li><a href="#Nov-Dec-2018">Nov-Dec (2018)</a></li>
+				  </ul>
+			</nav>
+			<button id='btn'>Submit</button>			
+			</div>			
+		</div>		
+	</div>
+	<div class="animate">
+	</div>
+	<div class="hidden" id="result"></div>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

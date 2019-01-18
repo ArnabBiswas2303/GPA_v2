@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Result Page</title>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="/stylesheet/result.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>	
+	<div class="container">
+		<h1 class="head">RESULT OF <%=regNum%></h1>
+		<table class="table">
+		  <thead class="thead-dark">
+		    <tr>
+		      <th scope="col">Subject Name</th>
+		      <th scope="col">Internal</th>
+		      <th scope="col">Semester</th>
+		      <th scope="col">Total</th>
+		      <th scope="col">Grade</th>
+		    </tr>
+		  </thead>
+		
+		<% for(sub in result) { %>
+		  <tbody>
+		    <tr>
+		      <th scope="row"><%= sub.slice(7) %></th>
+		      <td><%=  result[sub][0] %></td>
+		      <td><%= result[sub][1] %></td>
+		      <td><%= result[sub][2] %></td>
+		      <td><%= result[sub][3] %></td>
+		    </tr>
+		  </tbody>
+
+		<% } %>
+
+		</table>
+		<p id="gpa"> GPA : <%= gpa %></p>
+		<a class="btn btn-primary" href="/">GO BACK <i class="fas fa-arrow-circle-left"></i></a>
+	</div>
+</body>
+</html>
